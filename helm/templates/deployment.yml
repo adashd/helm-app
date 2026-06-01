@@ -5,7 +5,7 @@ metadata:
   labels:
     app: myapp
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: myapp
@@ -16,4 +16,5 @@ spec:
     spec:
       containers:
       - name: c1
-        image: adashd/httpd:v2
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        
