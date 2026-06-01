@@ -2,4 +2,4 @@ replicaCount: 1
 
 image:
   repository: adashd/httpd
-  tag: v2
+  tag: v3
