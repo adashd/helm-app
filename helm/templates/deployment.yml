@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: c1
-        image: adashd/httpd:v1
+        image: adashd/httpd:v2
